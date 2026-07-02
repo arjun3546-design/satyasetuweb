@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SatyaSetu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="screen1" class="screen">
+<div class="overlay">
+<img src="logo.png" class="logo">
+<h1>WELCOME</h1>
+<p class="desc">SatyaSetu is an AI-powered mobile application designed to promote transparency and support Sustainable Development Goal 16 (Peace, Justice and Strong Institutions). The app enables users to anonymously report suspected corruption incidents by submitting details and supporting evidence. AI assists in organizing and analyzing reports, while a secure dashboard helps authorities review submissions efficiently. SatyaSetu aims to encourage accountability, ethical governance, and citizen participation.</p>
+<button class="yellow" onclick="showScreen2()">Register your complaint</button>
+<button class="green" onclick="chat()">Chat with AI chatbot</button>
+</div>
+</div>
+
+<div id="screen2" class="screen hidden">
+<div class="overlay">
+<h2>Complaint Registration</h2>
+<form id="f">
+<input type="time" required>
+<input type="date" required>
+<input id="title" type="text" placeholder="Give a suitable title..." required>
+<textarea id="details" placeholder="Give a short detail of the incident..." required></textarea>
+<label>Choose an image from your device...</label>
+<input type="file" accept="image/*">
+<label>Choose a video from your device...</label>
+<input type="file" accept="video/*">
+<p class="note">Users are kindly requested to refrain from posting any personal information to ensure necessary transparency and fair submission of the complaint. The development team shall not be held responsible for any personal information thus submitted.</p>
+<button type="submit" class="red">Submit Complaint</button>
+<button type="button" onclick="back()">Back</button>
+</form>
+<div id="complaintsBox">
+<h3>Saved Complaints (Browser Storage)</h3>
+<div id="complaints"></div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

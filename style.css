@@ -1,0 +1,9 @@
+body{margin:0;font-family:Arial,sans-serif}
+.screen{min-height:100vh;background:url('corruption.png') center center no-repeat;background-size:contain;background-color:#6bb6db;display:flex;justify-content:center;align-items:center;padding:20px}
+.overlay{background:rgba(255,255,255,.92);padding:25px;border-radius:15px;max-width:800px;width:90%;text-align:center}
+.logo{width:220px;max-width:100%}.desc{line-height:1.6}
+button{padding:12px 20px;margin:8px;border:none;border-radius:20px;font-size:18px;cursor:pointer}
+.yellow{background:#ffc800}.green{background:#a1e4a1}.red{background:red;color:#fff}
+input,textarea{width:100%;padding:10px;margin:8px 0;box-sizing:border-box}
+.hidden{display:none}.note{font-size:14px;line-height:1.5}
+#complaintsBox{text-align:left;margin-top:20px}.item{border-bottom:1px solid #ccc;padding:8px 0}
